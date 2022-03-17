@@ -1,7 +1,6 @@
 from flask import Flask, render_template, redirect
 
 from forms.user import RegisterForm
-from data.news import News
 from data.users import User
 from data import db_session
 

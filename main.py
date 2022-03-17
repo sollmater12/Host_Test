@@ -155,7 +155,7 @@ def not_found(error):
 def main():
     db_session.global_init("db/mars_explorer.db")
     app.register_blueprint(jobs_api.blueprint)
-    port = int(os.environ.get("POST", 5000))
+    port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
 
 
